@@ -10,15 +10,16 @@ puts {
 set library_file_list {
                            work {butterfly.v
                                 fft.v
-                           		  fft_tb.v}
+                           		fft_sorter.v
+                        		fft_tb.v}
 }
 set top_level              fft_tb
 set wave_patterns {
+                           /*
                            /dut/*
+                           /outp/*
                            /dut/split_fft/fft_top/*
-                           /dut/split_fft/fft_top/split_fft/fft_top/*
                            /dut/split_fft/butterfly/*
-                           /dut/split_fft/fft_top/split_fft/butterfly/*
 }
 set wave_radices {
                            hexadecimal {data q}
